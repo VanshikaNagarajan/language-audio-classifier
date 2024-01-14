@@ -22,3 +22,15 @@ Ensure you have the following dependencies installed:
 
 
 Drive link for datasets : https://drive.google.com/drive/u/0/folders/1Aejhj03uv2XZUfwkrXfuJa6CuE1Tzy4e
+
+
+# Model Details
+The neural network model consists of three layers:
+
+Input layer: Dense layer with ReLU activation
+Hidden layer: Dropout layer with 50% dropout rate
+Output layer: Dense layer with softmax activation (for multiclass classification)
+The model is trained using the categorical crossentropy loss function and the Adam optimizer.
+
+# Results
+After training for 20 epochs, the model achieved an accuracy of approximately 88.33% on the test set.
