@@ -19,6 +19,11 @@ Ensure you have the following dependencies installed:
 - keras
 - numpy
 - Tensorflow
+- pickle
+- uvicorn
+- fastapi
+- typing 
+- pydantic
 
 
 Drive link for datasets : https://drive.google.com/drive/u/0/folders/1Aejhj03uv2XZUfwkrXfuJa6CuE1Tzy4e
@@ -34,3 +39,4 @@ The model is trained using the categorical crossentropy loss function and the Ad
 
 # Results
 After training for 20 epochs, the model achieved an accuracy of approximately 88.33% on the test set.
+Successfully, predicts the language using input features.
