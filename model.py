@@ -9,6 +9,8 @@ import tensorflow.keras.optimizers as optimizers
 from keras.preprocessing import sequence
 import ast
 import warnings
+import joblib
+
 
 warnings.filterwarnings("ignore", category=UserWarning, module="absl")
 
@@ -56,5 +58,8 @@ warnings.resetwarnings()
 accuracy = model.evaluate(X_test, y_test_encoded)[1]
 print(f"Accuracy on the test set: {accuracy}")
 
-model.save('language_classification_model.h5')
+model.save('language_classification_model.keras')
 print("model saved!!")
+
+joblib.dump(label_encoder, 'label_encoder.pkl')
+print("Model and label encoder saved!")
