@@ -58,7 +58,7 @@ warnings.resetwarnings()
 accuracy = model.evaluate(X_test, y_test_encoded)[1]
 print(f"Accuracy on the test set: {accuracy}")
 
-model.save('language_classification_model.keras')
+model.save('language_classification_model.h5')
 print("model saved!!")
 
 joblib.dump(label_encoder, 'label_encoder.pkl')
